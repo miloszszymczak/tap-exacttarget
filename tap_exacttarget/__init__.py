@@ -84,7 +84,7 @@ def do_sync(args):
 
     config = args.config
     state = args.state
-    catalog = args.properties
+    catalog = args.properties or args.catalog.to_dict()
 
     success = True
 
@@ -166,7 +166,7 @@ def main():
 
     if args.discover:
         do_discover(args)
-    elif args.properties:
+    elif args.properties or args.catalog:
         success = do_sync(args)
     else:
         LOGGER.info("No properties were selected")
