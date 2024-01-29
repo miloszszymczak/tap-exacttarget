@@ -13,7 +13,7 @@ setup(
     install_requires=[
         'funcy==1.9.1',
         'singer-python==5.12.1',
-        'python-dateutil==2.6.0',
+        'python-dateutil==2.8.2',
         'voluptuous==0.10.5',
         'Salesforce-FuelSDK==1.3.0'
     ],
