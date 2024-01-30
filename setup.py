@@ -16,10 +16,7 @@ setup(
         'singer-python==5.12.1',
         'python-dateutil==2.8.2',
         'voluptuous==0.10.5',
-        'Salesforce-FuelSDK'
-    ],
-    dependency_links=[
-        'git+https://github.com/miloszszymczak/FuelSDK-Python.git#egg=Salesforce-FuelSDK-1.3.1'
+        'Salesforce-FuelSDK @ git+https://github.com/miloszszymczak/FuelSDK-Python.git#egg=Salesforce-FuelSDK-1.3.1'
     ],
     extras_require={
         'test': [
